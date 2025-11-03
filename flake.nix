@@ -11,7 +11,6 @@
   };
 
   outputs = { self, nixpkgs, home-manager, flake-utils, ... }:
-    flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = nixpkgs.legacyPackages.${system};
         hostname = "nix-hypr";
@@ -37,5 +36,5 @@
           pkgs = pkgs;
           modules = [ ./home/${username} ];
         };
-      });
+      };
 }
