@@ -28,11 +28,12 @@
 
   # 图形 & Wayland
   services.xserver.enable = false;  # 纯 Wayland
-  services.displayManager.autoLogin.enable = true;
-  services.displayManager.autoLogin.user = username;
+  services.displayManager.sddm.enable = true;
+  # services.displayManager.autoLogin.enable = true;
+  # services.displayManager.autoLogin.user = username;
 
   # 启用 ly 显示管理器（轻量，支持 Wayland）
-  services.ly.enable = true;
+  # services.ly.enable = true;
 
   # 音频
   services.pipewire = {
