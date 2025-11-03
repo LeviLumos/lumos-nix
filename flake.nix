@@ -12,6 +12,7 @@
 
   outputs = { self, nixpkgs, home-manager, flake-utils, ... }:
       let
+        system = "x86_64-linux";
         pkgs = nixpkgs.legacyPackages.${system};
         hostname = "nix-hypr";
         username = "lumos";
