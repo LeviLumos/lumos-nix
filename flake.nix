@@ -20,6 +20,7 @@
       {
         nixosConfigurations.${hostname} = nixpkgs.lib.nixosSystem {
           specialArgs = { inherit system pkgs username; };
+          system = "x86_64-linux";
           modules = [
             ./hosts/${hostname}
             home-manager.nixosModules.home-manager
