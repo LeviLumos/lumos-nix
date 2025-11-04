@@ -6,11 +6,15 @@
     ./nix.nix
   ];
 
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
+
   networking.hostName = "nix-hypr";
   time.timeZone = "Asia/Shanghai";  # 请根据实际时区调整
   i18n.defaultLocale = "en_US.UTF-8";
 
   # 用户
+  programs.fish.enable = true;
   users.users.${username} = {
     isNormalUser = true;
     description = "lumos";
