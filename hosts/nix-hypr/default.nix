@@ -59,7 +59,7 @@
 
   # 全局字体 & 输入法
   fonts.packages = with pkgs; [
-    (nerd-fonts.override { fonts = [ "jetbrains-mono" ]; })
+    (nerd-fonts.override { font = "jetbrains-mono" ; })
   ];
 
   i18n.inputMethod = {
