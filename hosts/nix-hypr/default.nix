@@ -58,9 +58,9 @@
   };
 
   # 全局字体 & 输入法
-  fonts.packages = with pkgs; [
-    (nerd-fonts.override { font = "jetbrains-mono" ; })
-  ];
+  # fonts.packages = with pkgs; [
+  #   (nerd-fonts.override { font = "jetbrains-mono" ; })
+  # ];
 
   i18n.inputMethod = {
     enabled = "fcitx5";
