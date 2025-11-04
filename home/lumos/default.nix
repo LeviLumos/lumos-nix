@@ -27,7 +27,7 @@
   # Desktop Environment
   home.packages = with pkgs; [
     hyprland
-    waybar-hyprland
+    waybar
     mako
     wofi
     swaybg
