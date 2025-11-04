@@ -72,7 +72,7 @@
   qt = {
     enable = true;
     platformTheme = "qt5ct";
-    style = "kvantum";
+    style.name = "kvantum";
   };
 
   # Home Manager 自管理
