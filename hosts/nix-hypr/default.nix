@@ -16,7 +16,7 @@
     description = "lumos";
     extraGroups = [ "networkmanager" "wheel" "video" "audio" "docker" ];
     shell = pkgs.fish;
-    initialPassword: "lumos"
+    initialPassword = "lumos"
   };
   
   # 启用 Docker
