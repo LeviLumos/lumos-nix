@@ -38,6 +38,7 @@
   ];
   services.xserver.enable = false;  # 纯 Wayland
   services.displayManager.sddm.enable = true;
+  services.displayManager.sddm.wayland.enable = true;
   services.displayManager.sddm.theme = "sugar-dark";
   services.displayManager.sessionPackages = with pkgs; [
     hyprland
