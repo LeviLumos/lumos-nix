@@ -74,6 +74,7 @@
     curl
     firefox
     yazi
+    vim
     docker-compose
     clash-verge-rev
   ];
