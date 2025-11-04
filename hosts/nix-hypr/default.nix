@@ -3,6 +3,7 @@
 {
   imports = [
     ./hardware-configuration.nix
+    ./nix.nix
   ];
 
   networking.hostName = "nix-hypr";
@@ -27,8 +28,15 @@
   networking.networkmanager.enable = true;
 
   # 图形 & Wayland
+  services.displayManager.sddm.extraPackages = with pkgs; [
+    sddm-sugar-dark
+  ];
   services.xserver.enable = false;  # 纯 Wayland
   services.displayManager.sddm.enable = true;
+  services.displayManager.sddm.theme = "sugar-dark";
+  services.displayManager.sessionPackages = with pkgs; [
+    hyprland
+  ];
   # services.displayManager.autoLogin.enable = true;
   # services.displayManager.autoLogin.user = username;
 
@@ -59,14 +67,11 @@
     wget
     curl
     firefox
-    thunar
     yazi
     docker-compose
     clash-verge-rev
   ];
 
-  # Nix 设置
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # 系统版本
   system.stateVersion = "25.05";
