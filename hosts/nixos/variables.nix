@@ -17,7 +17,7 @@
   gitEmail = "v227to.me@gmail.com";
 
   # time zone
-  timeZone = "Asia/Shanghai";
+  timezone = "Asia/Shanghai";
 
   keyboardLayout = "us";
   defaultLocale = "en_US.UTF-8";
