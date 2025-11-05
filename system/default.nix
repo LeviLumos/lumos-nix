@@ -2,7 +2,8 @@ let
   dir = ./.;
   mainFile = "default.nix";
   exclude = [
-    # "sddm"
+    "sddm"
+    # "greet"
     "boot"
   ];
   files = builtins.readDir dir;
