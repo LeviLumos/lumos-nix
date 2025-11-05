@@ -7,7 +7,7 @@
     xdgOpenUsePortal = true;
     extraPortals = with pkgs; [
       xdg-desktop-portal-gtk
-      xdg-desktop-portal-wlr_git # includes RemoteDesktop patch
+      # xdg-desktop-portal-wlr_git # includes RemoteDesktop patch
       # Niri
       xdg-desktop-portal-gnome
     ];
