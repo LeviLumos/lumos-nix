@@ -92,7 +92,7 @@ in
       # nitch
       # xorg.xeyes
       # ascii-image-converter
-    ]
+    ];
     # ++ [
     #   # 自定义软件包
     #   (pkgs.callPackage ../../pkgs/shimeji/package.nix { })
