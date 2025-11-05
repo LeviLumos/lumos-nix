@@ -6,7 +6,13 @@
     ./nix.nix
     ./fonts.nix
     ./core.nix
-    ./home.nix
+    ./home.nix    
+    
+    ../../system
+    ../../programs
+    ../../servers
+    ../../modules
+    ../../themes
 
   ];
 
