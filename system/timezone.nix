@@ -4,7 +4,7 @@
 }:
 let
   inherit (import ../hosts/${host}/variables.nix)
-    timeZone
+    timezone
     keyboardLayout
     defaultLocale
     extraLocale
@@ -12,7 +12,7 @@ let
 in
 {
   # Set your time zone.
-  time.timeZone = "${timeZone}";
+  time.timeZone = "${timezone}";
   #services.automatic-timezoned.enable = true; #based on IP location
 
   # Select internationalisation properties.

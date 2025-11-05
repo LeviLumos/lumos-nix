@@ -3,8 +3,8 @@ let
   inherit (import ./variables.nix) defaultLocale timezone;
 in
 {
-  networking.hostName = hostName;
-  time.timeZone = timezone;  # 请根据实际时区调整
+  # networking.hostName = hostName;
+  # time.timeZone = timezone;  # 请根据实际时区调整
   i18n.defaultLocale = defaultLocale;
 
   # 音频
