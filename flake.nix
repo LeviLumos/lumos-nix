@@ -21,9 +21,9 @@
           specialArgs = { 
             inherit system;
             inherit inputs;
-            pkgs;
-            username;
-            hostname; 
+            pkgs
+            username
+            hostname 
           };
           system = "x86_64-linux";
           modules = [
