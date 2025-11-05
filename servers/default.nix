@@ -36,7 +36,7 @@
 #   imports = collected;
 # }
 {
-  import = [
+  imports = [
     ./flatpak.nix 
   ];
 }
