@@ -23,6 +23,7 @@ in
     packages =
       with pkgs;
       [
+        lxgw-wenkai # wenkai mono
         noto-fonts
         noto-fonts-cjk-sans
         noto-fonts-cjk-serif
