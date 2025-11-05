@@ -18,7 +18,13 @@
       in
       {
         nixosConfigurations.${hostname} = nixpkgs.lib.nixosSystem {
-          specialArgs = { inherit system pkgs username hostname; };
+          specialArgs = { 
+            inherit system;
+            inherit inputs;
+            pkgs;
+            username;
+            hostname; 
+          };
           system = "x86_64-linux";
           modules = [
             ./hosts/${hostname}
