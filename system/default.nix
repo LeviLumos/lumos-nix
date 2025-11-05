@@ -3,6 +3,7 @@ let
   mainFile = "default.nix";
   exclude = [
     # "sddm"
+    "boot"
   ];
   files = builtins.readDir dir;
   fullExclude = [ "default" ] ++ exclude;
