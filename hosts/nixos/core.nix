@@ -1,4 +1,4 @@
-{ config, pkgs, username,hostName ... }:
+{ config, pkgs, username, hostName, ... }:
 let
   inherit (import ./variables.nix) defaultLocale timezone;
 in
