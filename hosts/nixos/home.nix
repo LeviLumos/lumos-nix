@@ -4,7 +4,7 @@
   system,
   username,
   host,
-  nixpkgs
+  nixpkgs,
   ...
 }:
 {
