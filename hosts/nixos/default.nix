@@ -1,4 +1,4 @@
-{ config, pkgs, username,host, ... }:
+{ config, pkgs, username, host, ... }:
 
 {
   imports = [
@@ -148,7 +148,7 @@
     xserver = {
       enable = false;
       xkb = {
-        layout = "${keyboardLayout}";
+        layout = "us";
         variant = "";
       };
     };
