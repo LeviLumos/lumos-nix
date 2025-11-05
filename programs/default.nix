@@ -38,7 +38,7 @@
 # }
 
 {
-  import = [
+  imports = [
     ./fcitx5.nix
     ./git.nix
   ];
