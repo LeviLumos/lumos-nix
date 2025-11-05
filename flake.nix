@@ -16,12 +16,13 @@
         system = "x86_64-linux";
         pkgs = nixpkgs.legacyPackages.${system};
         hostname = "nixos";
+        host = "nixos";
         username = "lumos";
       in
       {
         nixosConfigurations.${hostname} = nixpkgs.lib.nixosSystem {
           specialArgs = { 
-            inherit system inputs pkgs username hostname ; 
+            inherit system inputs pkgs username hostname host ; 
           };
           system = "x86_64-linux";
           modules = [
