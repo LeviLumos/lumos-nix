@@ -7,6 +7,7 @@
     ./fonts.nix
     ./core.nix
     ./home.nix    
+    ./user.nix    
     
     ../../system
     ../../programs
