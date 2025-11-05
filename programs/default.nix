@@ -41,5 +41,5 @@
   import = [
     ./fcitx5.nix
     ./git.nix
-  ]
+  ];
 }

@@ -2,7 +2,7 @@ let
   dir = ./.;
   mainFile = "default.nix";
   exclude = [
-    "sddm"
+    # "sddm"
   ];
   files = builtins.readDir dir;
   fullExclude = [ "default" ] ++ exclude;

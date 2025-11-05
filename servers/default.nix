@@ -38,5 +38,5 @@
 {
   import = [
     ./flatpak.nix 
-  ]
+  ];
 }
