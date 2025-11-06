@@ -2,7 +2,8 @@
   description = " LeviLumos's NixOS configuration ";
 
   inputs = {
-    nixpkgs.url = "nixpkgs/nixpkgs-unstable";
+    # nixpkgs.url = "nixpkgs/nixpkgs-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
     nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-25.05";
     home-manager = {
       url = "github:nix-community/home-manager/release-25.05";
