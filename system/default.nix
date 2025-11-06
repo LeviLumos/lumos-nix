@@ -4,6 +4,7 @@ let
   exclude = [
     "sddm"
     # "greet"
+    "nix"
     "boot"
   ];
   files = builtins.readDir dir;
