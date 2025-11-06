@@ -28,7 +28,6 @@
           };
         };
         mkStable =
-          system:
           import nixpkgs-stable {
             inherit system;
             config.allowUnfree = true;
