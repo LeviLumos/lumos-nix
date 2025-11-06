@@ -2,7 +2,8 @@
   description = " LeviLumos's NixOS configuration ";
 
   inputs = {
-    nixpkgs.url = "github:nixOS/nixpkgs/nixos-25.05";
+    nixpkgs.url = "nixpkgs/nixpkgs-unstable";
+    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-25.05";
     home-manager = {
       url = "github:nix-community/home-manager/release-25.05";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -26,6 +27,12 @@
             permittedInsecurePackages = [ "mbedtls-2.28.10" ];
           };
         };
+        mkStable =
+          system:
+          import nixpkgs-stable {
+            inherit system;
+            config.allowUnfree = true;
+          };
         hostname = "nixos";
         host = "nixos";
         username = "lumos";
@@ -34,6 +41,7 @@
         nixosConfigurations.${hostname} = nixpkgs.lib.nixosSystem {
           specialArgs = { 
             inherit system inputs pkgs username hostname host ; 
+            stable = mkStable;
           };
           system = "x86_64-linux";
           modules = [
