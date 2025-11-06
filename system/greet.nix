@@ -8,6 +8,9 @@ let
   # niri-session = "${pkgs.niri}/bin/niri-session";
 in
 {
+  environment.systemPackages = with pkgs; [
+    tuigreet
+  ];
   services.greetd = {
     enable = true;
     settings = {
