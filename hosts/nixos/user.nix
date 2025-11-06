@@ -14,9 +14,10 @@ in
     };
   };
   # 允许过期不维护的包
-  # nixpkgs.config.permittedInsecurePackages = [
-  #   "electron-11.5.0" # NUR baidunetdisk needed
-  # ];
+  nixpkgs.config.permittedInsecurePackages = [
+    # "electron-11.5.0" # NUR baidunetdisk needed
+    "mbdtls-2.28.10"
+  ];
   environment.systemPackages =
     with pkgs;
     [
