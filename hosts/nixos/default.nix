@@ -55,6 +55,11 @@
     # fuse.userAllowOther = true; # 用户空间文件系统
   };
 
+  # 允许过期不维护的包
+  nixpkgs.config.permittedInsecurePackages = [
+    "mbedtls-2.28.10"
+  ];
+
   environment.systemPackages = (
     with pkgs;
     [
