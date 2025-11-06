@@ -17,16 +17,16 @@
           fcitx5-gtk # Fcitx5 gtk im module and glib based dbus client library
           kdePackages.fcitx5-qt
           fcitx5-material-color
-          fcitx5-rime
+          # fcitx5-rime
 
           # Rime
-          # (fcitx5-rime.override {
-          #   rimeDataPkgs = [
-          #     rime-ice
-          #     rime-moegirl
-          #     rime-wanxiang
-          #   ];
-          # })
+          (fcitx5-rime.override {
+            rimeDataPkgs = [
+              rime-ice
+              rime-moegirl
+              rime-wanxiang
+            ];
+          })
 
           # pinyin
           # fcitx5-chinese-addons
