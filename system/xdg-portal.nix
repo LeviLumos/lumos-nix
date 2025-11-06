@@ -7,13 +7,13 @@
     xdgOpenUsePortal = true;
     extraPortals = with pkgs; [
       xdg-desktop-portal-gtk
-      # xdg-desktop-portal-wlr_git # includes RemoteDesktop patch
+      xdg-desktop-portal-wlr # includes RemoteDesktop patch
       # Niri
-      xdg-desktop-portal-gnome
+      # xdg-desktop-portal-gnome
     ];
     configPackages = with pkgs; [
       xdg-desktop-portal-gtk
-      xdg-desktop-portal-wlr_git
+      xdg-desktop-portal-wlr
     ];
     config = {
       # 默认 fallback 配置
