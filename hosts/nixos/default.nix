@@ -56,7 +56,7 @@
   };
 
   # 允许过期不维护的包
-  nixpkgs.config.permittedInsecurePackages = [
+  pkgs.config.permittedInsecurePackages = [
     "mbedtls-2.28.10"
   ];
 
