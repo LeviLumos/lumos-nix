@@ -21,9 +21,9 @@
     '';
     settings = {
       auto-optimise-store = true;
-      system-features = [
-        "gccarch-x86-64-v3" # for chaotic-nyx pkgsx86_64-v3
-      ];
+      # system-features = [
+      #   "gccarch-x86-64-v3" # for chaotic-nyx pkgsx86_64-v3
+      # ];
       experimental-features = [
         "nix-command" # 启用 nix build, nix run, nix flake 等新命令
         "flakes"
@@ -32,9 +32,9 @@
       substituters = [
         "https://mirrors.tuna.tsinghua.edu.cn/nix-channels/store"
         "https://hyprland.cachix.org"
-        "https://cache.garnix.io" # add garnix cache form github loneros-nixos repo
+        # "https://cache.garnix.io" # add garnix cache form github loneros-nixos repo
         "https://nix-community.cachix.org"
-        "https://loneros.cachix.org"
+        # "https://loneros.cachix.org"
       ];
       trusted-public-keys = [
         "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
