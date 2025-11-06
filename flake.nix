@@ -19,7 +19,13 @@
   outputs = inputs@{ self, nixpkgs, home-manager, ... }:
       let
         system = "x86_64-linux";
-        pkgs = nixpkgs.legacyPackages.${system};
+        # pkgs = nixpkgs.legacyPackages.${system};
+        pkgs = import nixpkgs {
+          inherit system;
+          config = {
+            permittedInsecurePackages = [ "mbedtls-2.28.10" ];
+          };
+        };
         hostname = "nixos";
         host = "nixos";
         username = "lumos";
