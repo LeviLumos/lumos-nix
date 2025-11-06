@@ -1,13 +1,13 @@
 { pkgs, ... }:
 let
-  maple-mono-NF-CN = pkgs.maple-mono.NF.overrideAttrs (_: rec {
-    version = "7.0-beta36";
-    pname = "MapleMono-NF-CN";
-    src = pkgs.fetchurl {
-      url = "https://github.com/subframe7536/Maple-font/releases/download/v${version}/${pname}.zip";
-      sha256 = "sha256-W5b4jcr6fGaAbasCXCswGMkG/SklCXUbfRcPvZfzsNo=";
-    };
-  });
+  # maple-mono-NF-CN = pkgs.maple-mono.NF.overrideAttrs (_: rec {
+  #   version = "7.0-beta36";
+  #   pname = "MapleMono-NF-CN";
+  #   src = pkgs.fetchurl {
+  #     url = "https://github.com/subframe7536/Maple-font/releases/download/v${version}/${pname}.zip";
+  #     sha256 = "sha256-W5b4jcr6fGaAbasCXCswGMkG/SklCXUbfRcPvZfzsNo=";
+  #   };
+  # });
 
   nerdFonts = with pkgs.nerd-fonts; [
     # fonts name can get in `https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/data/fonts/nerdfonts/shas.nix`
@@ -36,17 +36,17 @@ in
       defaultFonts = {
         emoji = [ "Noto Color Emoji" ];
         serif = [
-          "Maple Mono NF CN"
+          # "Maple Mono NF CN"
           "Noto Serif CJK SC"
           "Noto Serif"
         ];
         sansSerif = [
-          "Maple Mono NF CN"
+          # "Maple Mono NF CN"
           "Noto Sans CJK SC"
           "Noto Sans"
         ];
         monospace = [
-          "Maple Mono NF CN"
+          # "Maple Mono NF CN"
           "Noto Sans Mono CJK SC"
         ];
       };
@@ -69,7 +69,7 @@ in
               <string>zh</string>
             </test>
             <edit name="family" mode="prepend" binding="strong">
-              <string>Maple Mono NF CN</string>
+              <string>jetbrains-mono</string>
             </edit>
           </match>
 
@@ -78,7 +78,7 @@ in
               <string>en</string>
             </test>
             <edit name="family" mode="prepend" binding="strong">
-              <string>Maple Mono NF CN</string>
+              <string>jetbrains-mono</string>
             </edit>
           </match>
 
