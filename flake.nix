@@ -24,13 +24,16 @@
         pkgs = import nixpkgs {
           inherit system;
           config = {
-            permittedInsecurePackages = [ "mbedtls-2.28.10" ];
+            permittedInsecurePackages = [ "mbedtls-2.28.10" "rime-moegirl-20251009" ];
           };
         };
         mkStable =
           import nixpkgs-stable {
             inherit system;
-            config.allowUnfree = true;
+          config = {
+            permittedInsecurePackages = [ "mbedtls-2.28.10" "rime-moegirl-20251009" ];
+            allowUnfree = true;
+          };
           };
         hostname = "nixos";
         host = "nixos";
