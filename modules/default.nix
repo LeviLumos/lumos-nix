@@ -9,6 +9,6 @@
     # ./local-hardware-clock.nix
 
     # other modules
-    # ./battery.nix
+    ./battery.nix
   ];
 }
