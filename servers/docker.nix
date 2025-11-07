@@ -68,5 +68,5 @@
   # 配置用户权限：将用户添加到 docker 组以便访问 Docker 套接字
   users.users.${username}.extraGroups = [ "docker" ]; # 将用户添加到 docker 组
   # 如果你希望为容器启用 GPU 直通，可以使用以下配置：
-  hardware.nvidia-container-toolkit.enable = true;
+  # hardware.nvidia-container-toolkit.enable = true;
 }
