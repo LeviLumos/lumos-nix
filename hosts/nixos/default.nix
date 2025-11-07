@@ -105,7 +105,7 @@
       btop
       nvtopPackages.full # 显卡监控
       cava # 音乐可视化
-      kitty # teminal
+      # kitty # teminal
       polkit_gnome # GNOME 风格授权图形界面
       file-roller # GNOME 风格的归档管理器
       eog # GNOME 桌面环境中的一个图像查看器

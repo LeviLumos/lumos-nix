@@ -9,7 +9,7 @@
 
   # Program Options
   browser = "ZenBrowser"; # Set Default Browser
-  terminal = "kitty"; # Set Default System Terminal
+  terminal = "ghostty"; # Set Default System Terminal
   shell = "fish"; # fish or zsh
 
   # git info

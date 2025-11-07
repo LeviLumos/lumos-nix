@@ -14,7 +14,7 @@ let
     directory = [ "thunar.desktop" ];
     office = [ "libreoffice.desktop" ];
     pdf = [ "obsidian.desktop" ];
-    terminal = [ "kitty.desktop" ];
+    terminal = [ "ghostty.desktop" ];
     archive = [ "xarchiver.desktop" ];
   };
 
