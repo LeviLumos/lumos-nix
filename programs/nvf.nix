@@ -192,7 +192,7 @@
               };
             };
           };
-          todo-comments.enable = true; # 启用 TODO 标注
+          # todo-comments.enable = true; # 启用 TODO 标注
         };
 
         ### 🎭 代码注释
