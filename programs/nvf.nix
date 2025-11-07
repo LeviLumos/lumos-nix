@@ -29,6 +29,7 @@
 
         ### 🔧 LSP（语言服务器）相关配置
         lsp = {
+          enable = true;
           formatOnSave = false; # 关闭保存时自动格式化
           lspkind.enable = false;
           lightbulb.enable = false;
@@ -47,7 +48,6 @@
 
         ### 🌍 语言支持（LSP + Treesitter + 代码格式化）
         languages = {
-          enableLSP = true; # 启用 LSP
           enableFormat = true; # 启用代码格式化
           enableTreesitter = true; # 启用 Treesitter 语法解析
           enableExtraDiagnostics = true; # 启用额外的 LSP 诊断
