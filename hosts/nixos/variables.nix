@@ -23,4 +23,6 @@
   defaultLocale = "en_US.UTF-8";
   extraLocale = "en_US.UTF-8";
 
+  autoGarbage = false; # nh autoUpgrade
+
 }
