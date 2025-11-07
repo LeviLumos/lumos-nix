@@ -5,31 +5,33 @@
 }:
 {
   # 自动登录
-  services.displayManager.autoLogin = {
-    enable = true;
-    user = "${username}";
-  };
+  # services.displayManager.autoLogin = {
+  #   enable = true;
+  #   user = "${username}";
+  # };
 
-  services.displayManager.sddm = {
-    enable = true;
-    wayland.enable = true;
-    package = pkgs.kdePackages.sddm; # 确保使用 Qt 6 版本的 SDDM
-    enableHidpi = true;
-    autoNumlock = true;
-    theme = "breeze";
-    extraPackages = with pkgs; [
-      kdePackages.qtsvg
-      kdePackages.qtmultimedia
-      kdePackages.qtvirtualkeyboard
-    ];
-  };
-  environment.plasa6.excludePackages = with pkgs.libsForQt6; [
-    konsole
-    kate
-    khelpcenter
-    dolphin
+  services.displayManager.sddm.enable = true;
+  services.desktopManager.plasma6.enable = true;
+  # services.displayManager.sddm = {
+  #   enable = true;
+  #   wayland.enable = true;
+  #   package = pkgs.kdePackages.sddm; # 确保使用 Qt 6 版本的 SDDM
+  #   enableHidpi = true;
+  #   autoNumlock = true;
+  #   theme = "breeze";
+  #   extraPackages = with pkgs; [
+  #     kdePackages.qtsvg
+  #     kdePackages.qtmultimedia
+  #     kdePackages.qtvirtualkeyboard
+  #   ];
+  # };
+  # environment.plasa6.excludePackages = with pkgs.libsForQt6; [
+  #   konsole
+  #   kate
+  #   khelpcenter
+  #   dolphin
 
-  ];
+  # ];
   # environment.systemPackages = [
   #   pkgs.elegant-sddm # Elegant
   #   (pkgs.callPackage ../pkgs/astronaut-sddm.nix {
