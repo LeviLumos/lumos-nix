@@ -30,6 +30,7 @@
         enableNixpkgsReleaseCheck = false;
       };
       programs.home-manager.enable = true;
+      programs.anki.enable = true;
       imports = [
         ../../home
       ];
