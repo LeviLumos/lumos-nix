@@ -12,7 +12,7 @@
 
       fcitx5 = {
         waylandFrontend = true;
-        # plasma6Support = true; #不用kde6 貌似不用启用
+        plasma6Support = true; #不用kde6 貌似不用启用
         addons = with pkgs; [
           fcitx5-gtk # Fcitx5 gtk im module and glib based dbus client library
           kdePackages.fcitx5-qt

@@ -9,7 +9,7 @@
       xdg-desktop-portal-gtk
       xdg-desktop-portal-wlr # includes RemoteDesktop patch
       # Niri
-      # xdg-desktop-portal-gnome
+      xdg-desktop-portal-gnome
     ];
     configPackages = with pkgs; [
       xdg-desktop-portal-gtk
@@ -23,26 +23,26 @@
           "gtk"
         ];
       };
-      hyprland = {
-        default = [
-          "hyprland"
-          "gtk"
-        ];
-      };
-      niri = {
-        default = [
-          "gnome"
-          "wlr"
-          "gtk"
-        ];
-        "org.freedesktop.impl.portal.FileChooser" = [ "gtk" ];
-      };
-      sway = {
-        default = [
-          "gtk"
-          "wlr"
-        ];
-      };
+      # hyprland = {
+      #   default = [
+      #     "hyprland"
+      #     "gtk"
+      #   ];
+      # };
+      # niri = {
+      #   default = [
+      #     "gnome"
+      #     "wlr"
+      #     "gtk"
+      #   ];
+      #   "org.freedesktop.impl.portal.FileChooser" = [ "gtk" ];
+      # };
+      # sway = {
+      #   default = [
+      #     "gtk"
+      #     "wlr"
+      #   ];
+      # };
     };
   };
 }
