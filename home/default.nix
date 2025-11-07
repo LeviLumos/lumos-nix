@@ -4,7 +4,7 @@
     ./git.nix
     ./nvf.nix
     ./zen
-    ./btop.nix
+    # ./btop.nix
     ./lazygit.nix
   ];
 }
