@@ -11,6 +11,10 @@
     };
     nvf.url = "github:notashelf/nvf";
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
+    zen-browser = {
+      url = "github:0xc000022070/zen-browser-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     # hyprland.url = "github:hyprwm/Hyprland";
     # nix-index-database = {
     #   url = "github:nix-community/nix-index-database";
