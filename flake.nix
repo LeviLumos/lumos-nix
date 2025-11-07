@@ -11,6 +11,7 @@
     };
     nvf.url = "github:notashelf/nvf";
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
+    stylix.url = "github:danth/stylix";
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -62,6 +63,7 @@
           system = "x86_64-linux";
           modules = [
             ./hosts/${hostname}
+            inputs.stylix.nixosModules.stylix
           ];
         };
 
