@@ -58,7 +58,7 @@ in
       # qbittorrent-enhanced # qbee
       # motrix
       # localsend
-      # ghostty
+      ghostty
       # foot
       # rio
       # zed-editor

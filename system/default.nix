@@ -2,7 +2,7 @@ let
   dir = ./.;
   mainFile = "default.nix";
   exclude = [
-    "sddm"
+    # "sddm"
     "nix"
     # "boot"
   ];
