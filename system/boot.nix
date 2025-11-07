@@ -122,14 +122,14 @@ in
     plymouth.enable = false;
   };
   # GRUB Bootloader theme. Of course you need to enable GRUB above.. duh!
-  distro-grub-themes = {
-    enable = false;
-    theme = "nixos"; # arch-liunx debain deppin gentoo fedora ...
-  };
-  honkai-railway-grub-theme = {
-    enable = true;
-    theme = "Huohuo"; # Kafka Huohuo March7th-TheHunt
-  };
+  # distro-grub-themes = {
+  #   enable = false;
+  #   theme = "nixos"; # arch-liunx debain deppin gentoo fedora ...
+  # };
+  # honkai-railway-grub-theme = {
+  #   enable = true;
+  #   theme = "Huohuo"; # Kafka Huohuo March7th-TheHunt
+  # };
   # cachyOS kernel 调度规则
   services.scx = {
     enable = true;
