@@ -59,6 +59,7 @@ in
       # motrix
       # localsend
       ghostty
+      clash-verge-rev
       # foot
       # rio
       # zed-editor
