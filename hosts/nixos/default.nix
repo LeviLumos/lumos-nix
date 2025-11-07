@@ -4,7 +4,7 @@
   imports = [
     ./hardware-configuration.nix
     ./nix.nix
-    ./fonts.nix
+    # ./fonts.nix
     ./core.nix
     ./home.nix    
     ./user.nix    

@@ -27,7 +27,7 @@
       inter-nerdfont
       victor-mono
       material-symbols
-      maple-mono.NF-CN
+      # maple-mono.NF-CN
       nerd-fonts.fantasque-sans-mono
     ];
 
