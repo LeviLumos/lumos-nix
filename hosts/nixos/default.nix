@@ -3,7 +3,7 @@
 {
   imports = [
     ./hardware-configuration.nix
-    ./nix.nix
+    # ./nix.nix
     # ./fonts.nix
     ./core.nix
     ./home.nix    
