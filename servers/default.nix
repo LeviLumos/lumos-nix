@@ -4,6 +4,7 @@ let
   exclude = [
     # "aria2"
     "mihomo"
+    "vicinae"
   ];
   files = builtins.readDir dir;
   fullExclude = [ "default" ] ++ exclude;
