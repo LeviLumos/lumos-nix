@@ -5,10 +5,10 @@
 }:
 {
   environment.systemPackages = with pkgs; [
-    # firefox
+    firefox
     # firefox_nightly
 
     # zen
-    inputs.zen-browser.packages."${pkgs.stdenv.hostPlatform.system}".twilight # default beta twilight
+    # inputs.zen-browser.packages."${pkgs.stdenv.hostPlatform.system}".twilight # default beta twilight
   ];
 }

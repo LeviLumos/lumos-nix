@@ -3,7 +3,7 @@
     ./ghostty.nix
     ./git.nix
     ./nvf.nix
-    ./zen
+    # ./zen
     ./btop.nix
     ./lazygit.nix
   ];

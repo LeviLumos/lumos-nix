@@ -3,7 +3,8 @@
 with lib;
 let
   defaultApps = {
-    browser = [ "zen-twilight.desktop" ];
+    # browser = [ "zen-twilight.desktop" ];
+    browser = [ "firefox.desktop" ];
     text = [ "nvim.desktop" ];
     image = [
       "org.gnome.eog.desktop"
