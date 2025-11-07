@@ -12,7 +12,7 @@
   home-manager = {
     useUserPackages = true;
     useGlobalPkgs = false; # You have set either `nixpkgs.config` or `nixpkgs.overlays` while using `home-manager.useGlobalPkgs`. This will soon not be possible.
-    backupFileExtension = "hm-backup";
+    # backupFileExtension = "hm-backup";
     extraSpecialArgs = {
       inherit
         inputs
@@ -30,9 +30,9 @@
         enableNixpkgsReleaseCheck = false;
       };
       programs.home-manager.enable = true;
-      # imports = [
-      #   ../../home
-      # ];
+      imports = [
+        ../../home
+      ];
     };
   };
 }
