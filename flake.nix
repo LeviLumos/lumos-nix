@@ -12,6 +12,10 @@
     nvf.url = "github:notashelf/nvf";
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
     # hyprland.url = "github:hyprwm/Hyprland";
+    nix-index-database = {
+      url = "github:nix-community/nix-index-database";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     nur = {
       url = "github:nix-community/NUR";
       inputs.nixpkgs.follows = "nixpkgs";
