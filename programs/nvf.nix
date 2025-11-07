@@ -35,7 +35,7 @@
           lspsaga.enable = false;
           trouble.enable = true; # 启用 LSP 诊断界面
           lspSignature.enable = true; # 显示函数签名
-          lsplines.enable = false;
+          # lsplines.enable = false;
           nvim-docs-view.enable = false;
         };
 
