@@ -18,8 +18,8 @@
   ];
 
   # TODO config about vm? 
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+  # boot.loader.systemd-boot.enable = true;
+  # boot.loader.efi.canTouchEfiVariables = true;
 
   programs = {
     xwayland.enable = true; # 兼容层
