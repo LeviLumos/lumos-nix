@@ -16,7 +16,7 @@
         # 基本 Neovim 配置
         preventJunkFiles = true; # 防止生成临时文件
         searchCase = "smart"; # 智能大小写搜索
-        useSystemClipboard = true; # 允许与系统剪贴板共享
+        # useSystemClipboard = true; # 允许与系统剪贴板共享
         viAlias = true; # 让 `vi` 命令使用 Neovim
         vimAlias = true; # 让 `vim` 命令使用 Neovim
         undoFile.enable = true; # 启用撤销文件，重启后仍可撤销
