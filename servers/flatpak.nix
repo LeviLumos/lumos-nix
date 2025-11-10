@@ -54,6 +54,9 @@
       # "im.riot.Riot"
       # 腾讯会议
       # "com.tencent.wemeet"
+      "app.zen_broser.zen"
+
+
     ];
     overrides = {
       # "com.brave.Browser".Context.filesystems = [ "home" ]; # 允许 Brave 访问主目录

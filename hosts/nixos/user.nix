@@ -22,6 +22,16 @@ in
   environment.systemPackages =
     with pkgs;
     [
+
+      lazygit
+      yazi
+      fuzzel
+      ghostty
+      clash-verge-rev
+      keyd
+      mise
+      vscodium
+
       # software
       # translate-shell # 命令行翻译
       # starship
@@ -41,15 +51,12 @@ in
       # gpu-screen-recorder # record video
       # satty # Screenshot Annotation
 
-      lazygit
       # bottom
       # neovim
-      yazi
       # rmpc # music cli
       # rsclock # colock
       # asciinema # rec demo.cast
       # asciinema-agg # cast -> gif
-      fuzzel
       # networkmanager_dmenu
       # posting # postman tui
       # isd # systemd TUI
@@ -58,8 +65,6 @@ in
       # qbittorrent-enhanced # qbee
       # motrix
       # localsend
-      ghostty
-      clash-verge-rev
       # foot
       # rio
       # zed-editor
