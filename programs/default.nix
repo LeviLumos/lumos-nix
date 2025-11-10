@@ -3,6 +3,7 @@ let
   mainFile = "default.nix";
   exclude = [
     "virtualbox"
+    "firefox"
     "qq"
   ];
   files = builtins.readDir dir;
