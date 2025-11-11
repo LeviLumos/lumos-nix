@@ -5,6 +5,7 @@ let
     "virtualbox"
     "firefox"
     "qq"
+    "quickshell"
   ];
   files = builtins.readDir dir;
   fullExclude = [ "default" ] ++ exclude;
