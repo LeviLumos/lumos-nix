@@ -25,7 +25,7 @@
   #     kdePackages.qtvirtualkeyboard
   #   ];
   # };
-  environment.plasa6.excludePackages = with pkgs; [
+  environment.plasa6.excludePackages = with pkgs.kdePackages; [
     konsole
     kate
     khelpcenter
