@@ -31,6 +31,7 @@ in
       keyd
       mise
       vscodium
+      daed
 
       # software
       # translate-shell # 命令行翻译
