@@ -3,7 +3,6 @@ let
   mainFile = "default.nix";
   exclude = [
     "virtualbox"
-    "firefox"
     "qq"
     "quickshell"
   ];
