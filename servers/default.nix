@@ -5,6 +5,7 @@ let
     # "aria2"
     "mihomo"
     "vicinae"
+    "nbfc"
   ];
   files = builtins.readDir dir;
   fullExclude = [ "default" ] ++ exclude;

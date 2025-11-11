@@ -13,27 +13,27 @@
 
   services.flatpak = {
     enable = true;
-    remotes = lib.mkOptionDefault [
-      {
-        name = "flathub";
-        location = "https://mirror.sjtu.edu.cn/flathub";
-      }
-      {
-        name = "flathub-beta";
-        location = "https://flathub.org/beta-repo/flathub-beta.flatpakrepo";
-      }
-      {
-        name = "flathub-official";
-        location = "https://flathub.org/repo/flathub.flatpakrepo";
-      }
-    ];
+    # remotes = lib.mkOptionDefault [
+    #   {
+    #     name = "flathub";
+    #     location = "https://mirror.sjtu.edu.cn/flathub";
+    #   }
+    #   {
+    #     name = "flathub-beta";
+    #     location = "https://flathub.org/beta-repo/flathub-beta.flatpakrepo";
+    #   }
+    #   {
+    #     name = "flathub-official";
+    #     location = "https://flathub.org/repo/flathub.flatpakrepo";
+    #   }
+    # ];
     update = {
       auto = {
         enable = true;
         onCalendar = "weekly";
       };
     };
-    uninstallUnmanaged = false;
+    uninstallUnmanaged = true;
     uninstallUnused = true;
     restartOnFailure = {
       enable = true;
@@ -54,9 +54,7 @@
       # "im.riot.Riot"
       # 腾讯会议
       # "com.tencent.wemeet"
-      "app.zen_broser.zen"
-
-
+      "app.zen_browser.zen"
     ];
     overrides = {
       # "com.brave.Browser".Context.filesystems = [ "home" ]; # 允许 Brave 访问主目录
