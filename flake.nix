@@ -6,9 +6,13 @@
     # nixpkgs.url = "git+https://mirrors.tuna.tsinghua.edu.cn/git/nixpkgs.git?ref=nixpkgs-unstable";
     nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-25.05";
     home-manager = {
-      url = "github:nix-community/home-manager/release-25.05";
+      url = "github:nix-community/home-manager/master";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    # home-manager = {
+    #   url = "github:nix-community/home-manager/release-25.05";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
     nvf.url = "github:notashelf/nvf";
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
     stylix.url = "github:danth/stylix";
