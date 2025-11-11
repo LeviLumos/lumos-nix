@@ -25,13 +25,12 @@
   #     kdePackages.qtvirtualkeyboard
   #   ];
   # };
-  # environment.plasa6.excludePackages = with pkgs.libsForQt6; [
-  #   konsole
-  #   kate
-  #   khelpcenter
-  #   dolphin
-
-  # ];
+  environment.plasa6.excludePackages = with pkgs; [
+    konsole
+    kate
+    khelpcenter
+    dolphin
+  ];
   # environment.systemPackages = [
   #   pkgs.elegant-sddm # Elegant
   #   (pkgs.callPackage ../pkgs/astronaut-sddm.nix {
