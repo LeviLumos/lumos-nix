@@ -1,2 +1,2 @@
 switch:
-  nixos-rebuild switch --flake .#nixos --option subsutituters "https://mirrors.tuna.tsinghua.edu.cn/nix-channels/store"
+  nixos-rebuild switch --flake .#nixos --option substituters "https://mirrors.tuna.tsinghua.edu.cn/nix-channels/store"
