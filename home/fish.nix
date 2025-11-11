@@ -10,4 +10,14 @@
   # default shell
   programs.fish.shellInit = "exec fish";
 
+  # aliase
+
+  programs.fish.functions = {
+    lg = {
+      body = "sudo lazygit"
+    }
+
+  }
+
+
 }
