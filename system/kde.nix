@@ -26,7 +26,7 @@
   #   ];
   # };
   environment.plasma6.excludePackages = with pkgs.kdePackages; [
-    konsole
+    # konsole
     kate
     khelpcenter
     dolphin
