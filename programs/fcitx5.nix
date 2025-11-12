@@ -16,7 +16,7 @@
         addons = with pkgs; [
           fcitx5-gtk # Fcitx5 gtk im module and glib based dbus client library
           kdePackages.fcitx5-qt
-          fcitx5-material-color
+          # fcitx5-material-color theme, but i feel just so so 
           # fcitx5-rime
 
           # Rime
